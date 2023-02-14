@@ -1,7 +1,7 @@
 import CakeCover from './images/boloSamuel.jpg';
 import CakeDeco from './images/samuel.jpg';
 import LegoDeco from './images/legoSamuel.jpg';
-import Decoration from './images/decoration.jpeg'
+import Decorations from './images/decorations.jpg'
 import Invitation from './images/invitation.jpeg'
 import Cake from './images/cakeprince.webp'
 
@@ -45,7 +45,7 @@ export const categories = [
     },
     {
         id:3,
-        img: Decoration,
+        img: Decorations,
         title: "PARTY DECORATIONS",
         cat: "decoration"
     },

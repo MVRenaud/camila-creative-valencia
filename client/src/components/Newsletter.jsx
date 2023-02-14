@@ -1,8 +1,6 @@
 import { Send } from '@mui/icons-material'
 import styled from 'styled-components';
 import { mobile } from "../responsive";
-import { Link, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
 
 const Container = styled.div`
     height: 60vh;
@@ -54,13 +52,6 @@ const Button = styled.button`
 
 
 const Newsletter = () => {
-    // const [email, setEmail]= useState("")
-    // const navigate = useNavigate();
-
-    // const navigateToMail = () =>{
-    //     alert("Thankyou for your email address, you will be redirect")
-    //     navigate("/mail", {email:email})
-    // }
   return (
     <Container>
         <Title>

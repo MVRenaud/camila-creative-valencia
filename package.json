@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "https://camila-creative-valencia.netlify.app/api",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon index.js && cd client && npm run dev",
     "build": "cd client && npm install && npm run build"
   },
   "keywords": [],

@@ -9,9 +9,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { publicRequest } from "../requestMethods";
 import { addProduct } from "../redux/cartRedux";
-import { useDispatch } from "react-redux";
-import BoloSamuel from '../images/boloSamuel.jpg'
-// import { data } from 'cypress/types/jquery';
+import { useDispatch } from "react-redux"
 
 const Container = styled.div``;
 
@@ -137,7 +135,9 @@ const Product = () => {
         try {
           const res = await publicRequest.get("/products/find/" + id);
           setProduct(res.data);
-        } catch {}
+        } catch(error){
+          console.log(error)
+        }
       };
       getProduct();
     }, [id]);

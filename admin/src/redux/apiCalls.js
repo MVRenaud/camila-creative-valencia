@@ -48,17 +48,6 @@ export const getUsers = async (dispatch)=>{
   }
 }
 
-// export const getCurrentUser = async (dispatch, user)=>{
-//   dispatch(getCurrentUserStart());
-//   try {
-//     const res = await userRequest.get("/users");
-//     dispatch(getCurrentUserSuccess(res.data));
-//   } catch (error) {
-//     dispatch(getCurrentUserFailure());
-//   }
-// }
-
-
 export const deleteUser = async (id, dispatch)=>{
   dispatch(deleteUserStart());
   try {
@@ -90,7 +79,6 @@ export const getProducts = async (dispatch) => {
 export const deleteProduct = async (id, dispatch) => {
   dispatch(deleteProductStart());
   try {
-    // const res = await userRequest.delete(`/products/${id}`);
     dispatch(deleteProductSuccess(id));
   } catch (err) {
     dispatch(deleteProductFailure());

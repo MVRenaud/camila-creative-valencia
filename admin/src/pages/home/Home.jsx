@@ -38,7 +38,9 @@ export default function Home() {
             { name: MONTHS[item._id - 1], "Active User": item.total },
           ])
         );
-      } catch {}
+      } catch(error){
+        console.log(error)
+      }
     };
     getStats();
   }, [MONTHS]);

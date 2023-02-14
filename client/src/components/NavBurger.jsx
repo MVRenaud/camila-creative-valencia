@@ -90,10 +90,8 @@ const NavBurger = () => {
     logOut(dispatch, user)
     navigate("/login")
 
-  }, [dispatch])
+  }, [dispatch]);
   
-  console.log("quant",quantity);
-  console.log("user",user);
   return (
     <>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>

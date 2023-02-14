@@ -22,18 +22,7 @@ const userSlice = createSlice({
     logout: (state) => {
       state.currentUser = null;
     },
-    // //Get current User
-    // getCurrentUserStart: (state) => {
-    //   state.isFetching = true;
-    // },
-    // getCurrentUserSuccess: (state, action) => {
-    //   state.isFetching = false;
-    //   state.currentUser = action.payload._id;
-    // },
-    // getCurrentUserFailure: (state) => {
-    //   state.isFetching = false;
-    //   state.error = true;
-    // },
+   
     //GET ALL
     getUsersStart: (state) => {
       state.isFetching = true;
@@ -47,20 +36,6 @@ const userSlice = createSlice({
       state.isFetching = false;
       state.error = true;
     },
-
-    // //Get User
-    // getUserStart: (state) => {
-    //   state.isFetching = true;
-    //   state.error = false;
-    // },
-    // getUserSuccess: (state, action) => {
-    //   state.isFetching = false;
-    //   state.currentUser.findIndex((user) => user._id === action.payload);
-    // },
-    // getUserFailure: (state) => {
-    //   state.isFetching = false;
-    //   state.error = true;
-    // },
 
     //DELETE
     deleteUserStart: (state) => {

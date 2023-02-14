@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
-import { publicRequest } from "../requestMethods";
-// import { useHistory } from "react-router";
 const Container = styled.div`
 `;
 
@@ -29,7 +27,6 @@ const Button = `
 `
 
 const EMailPage = () =>{
-    // const history = useHistory();
     const [mailerState, setMailerState] = useState({
         name: "matheus",
         email: "matheus@gmail.com",
@@ -42,26 +39,9 @@ const EMailPage = () =>{
           [e.target.name]: e.target.value,
         }));
       };
-
-    //   useEffect(()=>{
-    //     const submitEmail = async (e) => {
-    //     e.preventDefault();
-    //     try{
-    //        await publicRequest.post("/mail/send/", {
-    //         email: mailerState.email,
-    //         name: mailerState.name,
-    //         message: mailerState.message});
-           
-    //     }catch(error){
-    //       console.log(error)
-    //     }
-    //   };
-    //   submitEmail();
-    // }, [handleStateChange]);
       
     const submitEmail = async (e) => {
       e.preventDefault();
-      console.log({ mailerState });
       const response = await fetch("http://localhost:3001/mail/send", {
         method: "POST",
         headers: {

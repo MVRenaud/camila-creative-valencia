@@ -1,11 +1,8 @@
-// import { Input } from '@mui/material';
 import styled from 'styled-components';
-import axios from "../util/axiosInstance";
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import ErrorMessage from '../components/Common/ErrorMessage/index';
 import MainLogo from '../images/legoSamuel.jpg'
-import { publicRequest } from '../requestMethods';
 import { useDispatch, useSelector } from "react-redux";
 import { addUser } from '../redux/apiCalls';
 import { mobile } from "../responsive"
@@ -73,7 +70,6 @@ const Button = styled.button`
       }
       ${mobile({ fontSize: "3re" })}
 `;
-// cursor: Pointer;
 const Register = () => {
     const [firstname, setFirstname] = useState("");
     const [lastname, setLastname] = useState("");
@@ -112,29 +108,8 @@ const Register = () => {
         
         disabledButton();
         
-    }, [firstname && lastname && username  && password && email])
+    }, [firstname && lastname && username  && password && email]);
 
-    // useEffect(()=>{
-    //     const inputFieldMesssage = () =>{
-    //         switch(button){
-    //             case (firstname== ""):
-    //                 setInputMessages("Please type first Name")
-    //                 break;
-    //             case (firstname && !lastname):
-    //                 setInputMessages("Please type last Name")
-    //                 break;
-    //         }
-    //     };
-    //     inputFieldMesssage();
-    // }, [])
-
-
-
-
-        console.log("first", firstname, lastname, username, email, password)
-        console.log(addUser)
-        console.log(button)
-        console.log(inputMessages)
   return (
     <Container>
         <Wrapper>

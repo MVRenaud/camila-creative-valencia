@@ -4,9 +4,17 @@ import {mobile} from '../responsive'
 import { Search } from '@mui/icons-material';
 import NavBurger from './NavBurger'
 import camilaCreative from '../images/camilaCreative.jpg'
+import logoCamila from '../images/logoCamila.jpg'
 
 export const PrimaryNav = styled.nav`
-width: 100%;
+  width: 100%;
+  position: fixed;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  ),
+  url(${logoCamila})
+    center;
   z-index: 5;
   height: 60px;
   display: flex;

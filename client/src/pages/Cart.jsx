@@ -187,7 +187,9 @@ const Cart = () => {
         navigate.push("/success", {
           stripeData: res.data,
           products: cart, });
-      } catch {}
+      } catch(error){
+        console.log(error)
+      }
     };
     stripeToken && makeRequest();
   }, [stripeToken, cart.total, navigate]);

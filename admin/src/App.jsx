@@ -14,7 +14,6 @@ import Sidebar from "./components/sidebar/Sidebar";
 
 function App() {
   const admin = useSelector((state) => state.user.currentUser.isAdmin);
-  console.log(admin);
   return (
     <BrowserRouter>
     <Topbar />

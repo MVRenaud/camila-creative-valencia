@@ -25,10 +25,8 @@ import { useSelector } from "react-redux";
          setTime(new Date(user.createdAt).toUTCString())
       };
       getUserTime();
-    }, [user])
-
-    console.log(userId);
-    console.log(user);
+    }, [user]);
+    
     return (
       <div className="user">
         <div className="userTitleContainer">

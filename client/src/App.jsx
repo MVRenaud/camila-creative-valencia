@@ -15,7 +15,7 @@ function App() {
   const user = useSelector((state) => state.user.currentUser);
   
   return (
-        <BrowserRouter basename='api'>
+        <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/products/:category' element={<ProductList />} />

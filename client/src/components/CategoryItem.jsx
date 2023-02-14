@@ -19,6 +19,7 @@ const Image = styled.img`
 `;
  
 
+
 const Info = styled.div`
     position:absolute;
     top:0;
@@ -32,14 +33,14 @@ const Info = styled.div`
 `;
 
 const Title = styled.h1`
-    color: white;
+    color: #0E6251;
     margin-bottom: 20px;
 `;
 
 const Button = styled.button`
     border: none;
     padding: 10px;
-    background-color: white;
+    background-color: #F9E79F;
     color: gray;
     cursor: pointer;
     font-weight: 600;
